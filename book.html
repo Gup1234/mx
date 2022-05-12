@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="book.css">
+    <title>Document</title>
+</head>
+
+<body>
+     
+    <div class="elem-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="visitor_name" placeholder="Manish " pattern=[A-Z\sa-z]{3,20} required>
+    </div>
+    <div class="elem-group">
+        <label for="email">Your E-mail</label>
+        <input type="email" id="email" name="visitor_email" placeholder="Manish@email.com" required>
+    </div>
+    <div class="elem-group">
+        <label for="phone">Your Phone</label>
+        <input type="tel" id="phone" name="visitor_phone" placeholder="998-348-3872"
+            
+    </div>
+    <hr>
+    <div class="elem-group inlined">
+        <label for="adult">Weight of box (kg)</label>
+        <input type="number" id="Weight" name="total_adults" placeholder="2" min="1" required>
+    </div>
+    <div class="elem-group inlined">
+        <label for="Boxes">No of Boxes</label>
+        <input type="number" id="Boxes" name="No of Boxes" placeholder="2" min="0" required>
+    </div>
+    <div class="elem-group inlined">
+        <label for="Pickup Date">Pickup Date</label>
+        <input type="date" id="checkin-date" required>
+    </div>
+    <div class="elem-group inlined">
+        <label for="Time">time</label>
+        <input type="time" id="time" name="time" required>
+    </div>
+    <div class="elem-group">
+        <label for="Delivery-selection">Delivery-preference</label>
+        <select id="Delivery-selection" name="Delivery-preference" required>
+            <option value="">Delivery-type</option>
+            <option value="connecting">Express Delivery (24 hours)</option>
+            <option value="adjoining">Fast Delivery (2-3 Days)</option>
+            <option value="adjacent">Normal (5-7 Days)</option>
+        </select>
+    </div>
+    <hr>
+    <div class="elem-group">
+        <label for="message">Anything Else?</label>
+        <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important."
+            required></textarea>
+    </div>
+    <button type="submit">Book The Appointment</button>
+    </form>
+</body>
+
+</html>
